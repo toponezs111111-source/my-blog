@@ -1,7 +1,8 @@
 import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
 import swup from "@swup/astro";
-import icon from "astro-icon"; // 1. 新增：引入图标插件
+import icon from "astro-icon";
+import svelte from "@astrojs/svelte"; // 1. 新增：引入 Svelte 引擎
 
 // https://astro.build/config
 export default defineConfig({
@@ -30,6 +31,7 @@ export default defineConfig({
                 return event.state && event.state.url && event.state.url.includes("#");
             },
         }),
-        icon(), // 2. 新增：启用图标插件
+        icon(),
+        svelte(), // 2. 新增：启用 Svelte 集成
     ],
 });
