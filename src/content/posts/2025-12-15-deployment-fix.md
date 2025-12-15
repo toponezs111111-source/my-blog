@@ -1,6 +1,6 @@
 ---
 title: 踩坑记录：如何完美部署 GitHub Pages 学术主页
-published: 2023-12-15
+published: 2025-12-15
 description: 记录使用 Jekyll 模版部署个人主页时遇到的样式丢失问题，以及详细的修复过程。
 tags: [Github, Tutorial, VS Code]
 category: 技术复盘
