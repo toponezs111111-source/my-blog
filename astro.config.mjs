@@ -1,15 +1,12 @@
 import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
-import swup from "@swup/astro"; 
+import swup from "@swup/astro";
+import icon from "astro-icon"; // 1. 新增：引入图标插件
 
 // https://astro.build/config
 export default defineConfig({
-    // 1. 你的 GitHub Pages 根地址
     site: "https://toponezs111111-source.github.io",
-
-    // 2. 你的仓库名称（必须带斜杠）
     base: "/my-blog",
-    
     trailingSlash: "always",
     
     integrations: [
@@ -33,5 +30,6 @@ export default defineConfig({
                 return event.state && event.state.url && event.state.url.includes("#");
             },
         }),
-    ], // <--- 你之前漏掉了这个中括号
-}); // <--- 你之前漏掉了这个大括号和圆括号
+        icon(), // 2. 新增：启用图标插件
+    ],
+});
