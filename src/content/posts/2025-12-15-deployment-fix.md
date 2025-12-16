@@ -11,8 +11,10 @@ draft: false
 
 最近我基于 `luost26/academic-homepage` 模版搭建了自己的学术主页。原本以为 "Fork" 之后就能直接用，结果部署上线后，页面变成了这样：
 
-![样式丢失的错误页面](/images/homepage-error.png)
-*图 1：样式丢失，CSS 无法加载，导航栏点击 404*
+![样式丢失的错误页面1](public/images/homepage-error1.png)
+
+![样式丢失的错误页面2](public/images/homepage-error2.png)
+*图 1-图2：样式丢失，CSS 无法加载，导航栏点击 404*
 
 这不仅不美观，完全无法使用。经过一番研究，我发现这是 GitHub Pages 的路径配置问题。
 
